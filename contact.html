@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="contact.css" rel="stylesheet"/>
+  <title>Contact Us</title>
+
+</head>
+<body>
+  <main>
+    <h1>Contact Us</h1>
+
+      <div>
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" data-testid="test-contact-name" aria-describedby="test-contact-error-name" />
+        <p id="test-contact-error-name" class="error" aria-live="polite"></p>
+      </div>
+
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" data-testid="test-contact-email" aria-describedby="test-contact-error-email" />
+        <p id="test-contact-error-email" class="error" aria-live="polite"></p>
+      </div>
+
+
+      <div>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" data-testid="test-contact-subject" aria-describedby="test-contact-error-subject" />
+        <p id="test-contact-error-subject" class="error" aria-live="polite"></p>
+      </div>
+
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" data-testid="test-contact-message" aria-describedby="test-contact-error-message"></textarea>
+        <p id="test-contact-error-message" class="error" aria-live="polite"></p>
+      </div>
+
+      <button type="submit" data-testid="test-contact-submit">Submit</button>
+
+      <p id="test-contact-success" class="success" aria-live="polite" hidden>
+        ✅ Thank you! Your message has been sent successfully.
+      </p>
+    </form>
+  </main>
+<script src="index.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>
